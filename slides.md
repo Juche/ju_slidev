@@ -32,7 +32,7 @@ Presentation slides for developers
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
+<!-- <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
@@ -40,7 +40,7 @@ Presentation slides for developers
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
-</div>
+</div> -->
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -48,6 +48,22 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
+# Syntax
+
+## title: Slide title
+
+## Code
+
+```ts
+import { ref } from 'vue'
+const text = ref('Hello, Slidev!')
+```
+
+<div class="p-3">
+  <Tweet id="..." />
+</div>
+
+---
 transition: fade-out
 ---
 
@@ -90,7 +106,6 @@ Here is another comment.
 -->
 
 ---
-
 transition: slide-up
 level: 2
 ---
@@ -118,7 +133,6 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-
 layout: two-cols
 layoutClass: gap-16
 ---
@@ -138,7 +152,6 @@ The title will be inferred from your slide content, or you can override it with 
 <Toc v-click minDepth="1" maxDepth="2"></Toc>
 
 ---
-
 layout: image-right
 image: <https://cover.sli.dev>
 ---
@@ -193,7 +206,6 @@ Notes can also sync with clicks
 -->
 
 ---
-
 level: 2
 ---
 
@@ -310,7 +322,6 @@ Also, HTML elements are valid:
 -->
 
 ---
-
 class: px-20
 ---
 
@@ -559,13 +570,9 @@ database "MySql" {
 Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
 
 ---
-
 foo: bar
 dragPos:
   square: 677,27,167,_,-16
----
-dragPos:
-  square: 0,-221,0,0
 ---
 
 # Draggable Elements
@@ -591,7 +598,7 @@ Double-click on the draggable elements to edit their positions.
 </v-drag>
 ```
 
-<v-drag pos="660,205,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="660,205,261,_,-15">
   <div text-center text-3xl border border-main rounded>
     Double-click me!
   </div>
@@ -608,11 +615,9 @@ Double-click on the draggable elements to edit their positions.
 <v-drag-arrow pos="67,452,253,46" two-way op70 />
 
 ---
-
 src: ./pages/imported-slides.md
 hide: false
 ---
-
 
 ---
 
@@ -641,7 +646,6 @@ console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-
 ```
 
 ---
-
 layout: center
 class: text-center
 ---
